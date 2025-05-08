@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gametelegram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Профиль пользователя -->
+        <div class="profile-card">
+            <div class="avatar" id="user-avatar">T</div>
+            <h1 id="user-name">Загрузка...</h1>
+            <p id="user-username">@username</p>
+        </div>
+
+        <!-- Мини-игра -->
+        <div class="game-card">
+            <h2>🎮 Угадай число (1-10)</h2>
+            <input type="number" id="guess-input" min="1" max="10" placeholder="Введите число">
+            <button id="guess-btn">Проверить</button>
+            <p id="game-result"></p>
+        </div>
+
+        <!-- Кнопка закрыть -->
+        <button id="close-btn">Закрыть приложение</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
